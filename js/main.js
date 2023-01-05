@@ -33,6 +33,7 @@ function updateCounter() {
 	minutes.innerText = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
 	seconds.innerText = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
 
+	// Склонение слов "день, час, минута, секунда" по числам
 	switch(daysLeft % 10) {
 		case 1:
 			daysText.innerHTML = 'день';
